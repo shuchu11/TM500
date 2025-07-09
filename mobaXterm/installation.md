@@ -1,7 +1,7 @@
 * Source
 https://mobaxterm.mobatek.net/download-home-edition.html
 
-* Step \
+* Step 
 
 Download a stable version
 ![alt text](image.png)
