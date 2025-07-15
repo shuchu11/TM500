@@ -1,0 +1,31 @@
+ubuntu@maxwell:~$ systemctl start phc2sys.service 
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===
+Authentication is required to start 'phc2sys.service'.
+Authenticating as: ubuntu,,, (ubuntu)
+Password: 
+
+^C
+ubuntu@maxwell:~$ sudo journalctl -u phc2sys -f
+ 七  15 17:45:14 maxwell phc2sys[89109]: [22461.121] failed to get UTC offset
+ 七  15 17:45:16 maxwell phc2sys[89109]: [22463.122] failed to get UTC offset
+ 七  15 17:45:18 maxwell phc2sys[89109]: [22465.123] failed to get UTC offset
+ 七  15 17:45:20 maxwell phc2sys[89109]: [22467.124] failed to get UTC offset
+ 七  15 17:45:22 maxwell phc2sys[89109]: [22469.125] failed to get UTC offset
+ 七  15 17:45:24 maxwell phc2sys[89109]: [22471.126] failed to get UTC offset
+ 七  15 17:45:26 maxwell phc2sys[89109]: [22473.127] failed to get UTC offset
+ 七  15 17:45:28 maxwell phc2sys[89109]: [22475.128] failed to get UTC offset
+ 七  15 17:45:30 maxwell phc2sys[89109]: [22477.129] failed to get UTC offset
+ 七  15 17:45:32 maxwell phc2sys[89109]: [22479.131] failed to get UTC offset
+ 七  15 17:45:34 maxwell phc2sys[89109]: [22481.132] failed to get UTC offset
+^C
+ubuntu@maxwell:~$ sudo journalctl -u ptp4l -f
+ 七  15 17:40:59 maxwell ptp4l[3217]: [22205.923] rms    4 max    8 freq  -6303 +/-   4 delay    54 +/-   1
+ 七  15 17:41:00 maxwell ptp4l[3217]: [22206.936] rms    7 max   14 freq  -6319 +/-   9 delay    56 +/-   0
+ 七  15 17:41:01 maxwell ptp4l[3217]: [22207.923] rms    5 max    9 freq  -6310 +/-   8 delay    55 +/-   1
+ 七  15 17:41:02 maxwell ptp4l[3217]: [22208.937] rms    4 max    7 freq  -6303 +/-   4 delay    56 +/-   1
+ 七  15 17:41:03 maxwell ptp4l[3217]: [22209.923] rms    4 max    8 freq  -6302 +/-   6 delay    54 +/-   1
+ 七  15 17:41:04 maxwell ptp4l[3217]: [22210.923] rms    9 max   16 freq  -6320 +/-  12 delay    57 +/-   1
+ 七  15 17:41:04 maxwell ptp4l[3217]: [22211.084] timed out while polling for tx timestamp
+ 七  15 17:41:04 maxwell ptp4l[3217]: [22211.084] increasing tx_timestamp_timeout may correct this issue, but it is likely caused by a driver bug
+ 七  15 17:41:04 maxwell ptp4l[3217]: [22211.084] port 1: send delay request failed
+ 七  15 17:41:04 maxwell ptp4l[3217]: [22211.084] port 1: SLAVE to FAULTY on FAULT_DETECTED (FT_UNSPECIFIED)
