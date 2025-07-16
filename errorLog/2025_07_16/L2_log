@@ -1,0 +1,942 @@
+ubuntu@maxwell:~$ sudo su
+[sudo] password for ubuntu:
+
+:: initializing oneAPI environment ...
+   bash: BASH_VERSION = 5.1.16(1)-release
+   args: Using "$@" for setvars.sh arguments:
+:: advisor -- latest
+:: ccl -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ipp -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: tbb -- latest
+:: vpl -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+
+root@maxwell:/home/ubuntu# cd /home/ubuntu/intel_sw/FlexRAN/l1/bin/nr5g/gnb/testmac
+root@maxwell:/home/ubuntu/intel_sw/FlexRAN/l1/bin/nr5g/gnb/testmac# source ../../../../../../phy/setupenv.sh
+root@maxwell:/home/ubuntu/intel_sw/FlexRAN/l1/bin/nr5g/gnb/testmac# ./l2.sh
+Number of commandline: 0
+kernel.sched_rt_runtime_us = -1
+kernel.shmmax = 2147483648
+kernel.shmall = 2147483648
+using configuration file testmac_cfg.xml
+start LTE Test MAC
+>> Running... taskset -c 0 ./testmac DIR_WIRELESS_TEST_4G= DIR_WIRELESS_TEST_5G=/home/ubuntu/intel_sw/FlexRAN/testcase --cfgfile testmac_cfg.xml CORE_LIST=0-63
+FlexRAN SDK bblib_lte_ldpc_decoder version #DIRTY#
+FlexRAN SDK bblib_lte_ldpc_encoder version #DIRTY#
+FlexRAN SDK bblib_lte_LDPC_ratematch version #DIRTY#
+FlexRAN SDK bblib_lte_rate_dematching_5gnr version #DIRTY#
+Cannot open file
+FlexRAN SDK bblib_lte_turbo version #DIRTY#
+FlexRAN SDK bblib_lte_crc version #DIRTY#
+FlexRAN SDK bblib_lte_rate_matching version #DIRTY#
+FlexRAN SDK bblib_common version #DIRTY#
+FlexRAN SDK bblib_srs_fft_cestimate_5gnr version #DIRTY#
+FlexRAN SDK bblib_mldts_process_5gnr version #DIRTY#
+=========================
+Testmac Application
+=========================
+
+
+---------------------------
+File testmac_cfg.xml Version: 23.07
+---------------------------
+
+ --version=23.07
+ --wls_dev_name=wls0
+ --wls_block_size=0x40000
+ --wls_carrier_aggregation=0
+ --dpdkFilePrefix=gnb0
+ --dpdkIovaMode=0
+ --PhyStartMode=1
+ --PhyStartPeriod=40
+ --PhyStartCount=0
+ --PhyCoreCheck=1
+ --MlogSubframes=128
+ --MlogCores=3
+ --MlogSize=2048
+ --nDbgPrintTime=0
+ --latencyTest=0
+ --staggerCells=0
+ --shortApiMode=0
+ --startCellIdx=-1
+ --sendRadioCfg=0
+ --radioCfg0=radio_config/radio_cfg.xml
+ --radioCfg1=radio_config/radio_cfg.xml
+ --radioCfg2=radio_config/radio_cfg.xml
+ --radioCfg3=radio_config/radio_cfg.xml
+ --radioCfg4=radio_config/radio_cfg.xml
+ --radioCfg5=radio_config/radio_cfg.xml
+ --radioCfg6=radio_config/radio_cfg.xml
+ --radioCfg7=radio_config/radio_cfg.xml
+ --radioCfg8=radio_config/radio_cfg.xml
+ --radioCfg9=radio_config/radio_cfg.xml
+ --wlsRxThread=1, 90, 0
+ --systemThread=0, 0, 0
+ --runThread=0, 89, 0
+ --urllcThread=15, 90, 0
+ --StreamStats=0
+ --StreamIp=127.0.0.1
+ --StreamPort=4000
+ --StreamPacket=0
+ --StreamPacketNumStreams=12
+ --StreamPacketType=1
+ --StreamPacketDisableL1Api=0
+ --StreamNet2PhyThread=3, 0, 0
+ --StreamPhy2NetThread=3, 0, 0
+ --StreamSocketType=0
+ --StreamDpdkInterface=0000:bb:aa.0
+ --StreamSharedMemPoolName=testmac_pkt
+ --StreamSrcIp0=0.0.0.0
+ --StreamDstIp0=127.0.0.1
+ --StreamSrcPort0=2234
+ --StreamDstPort0=1234
+ --StreamSrcIp1=0.0.0.0
+ --StreamDstIp1=127.0.0.1
+ --StreamSrcPort1=2235
+ --StreamDstPort1=1235
+ --StreamSrcIp2=0.0.0.0
+ --StreamDstIp2=127.0.0.1
+ --StreamSrcPort2=2236
+ --StreamDstPort2=1236
+ --StreamSrcIp3=0.0.0.0
+ --StreamDstIp3=127.0.0.1
+ --StreamSrcPort3=2237
+ --StreamDstPort3=1237
+ --StreamSrcIp4=0.0.0.0
+ --StreamDstIp4=127.0.0.1
+ --StreamSrcPort4=2238
+ --StreamDstPort4=1238
+ --StreamSrcIp5=0.0.0.0
+ --StreamDstIp5=127.0.0.1
+ --StreamSrcPort5=2239
+ --StreamDstPort5=1239
+ --StreamSrcIp6=0.0.0.0
+ --StreamDstIp6=127.0.0.1
+ --StreamSrcPort6=2240
+ --StreamDstPort6=1240
+ --StreamSrcIp7=0.0.0.0
+ --StreamDstIp7=127.0.0.1
+ --StreamSrcPort7=2241
+ --StreamDstPort7=1241
+ --StreamSrcIp8=0.0.0.0
+ --StreamDstIp8=127.0.0.1
+ --StreamSrcPort8=2242
+ --StreamDstPort8=1242
+ --StreamSrcIp9=0.0.0.0
+ --StreamDstIp9=127.0.0.1
+ --StreamSrcPort9=2243
+ --StreamDstPort9=1243
+ --StreamSrcIp10=0.0.0.0
+ --StreamDstIp10=127.0.0.1
+ --StreamSrcPort10=2244
+ --StreamDstPort10=1244
+ --StreamSrcIp11=0.0.0.0
+ --StreamDstIp11=127.0.0.1
+ --StreamSrcPort11=2245
+ --StreamDstPort11=1245
+ --StreamPacketSetL1Core=0
+ --StreamPacketL1CoreCell0=0x3000030, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell1=0x3000030, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell2=0x7000070, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell3=0x1f0001f0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell4=0x1f0001f0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell5=0xff000ff0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell6=0xff000ff0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell7=0x7ff007ff0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell8=0xfff00fff0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell9=0x3fff03fff0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell10=0x7fff07fff0, 0x0, 0x0, 0x0
+ --StreamPacketL1CoreCell11=0x7fff07fff0, 0x0, 0x0, 0x0
+ --ConfigFromTestFile=0
+ --ConfigFromTestFileType=1
+ --TestFileNameType0=traffic_profile/traffic_profile.csv
+ --TestFileSetL1Core=0
+ --TestFileSetL1CoreName=traffic_profile/core_mask.txt
+ --TestFileDuration=2000
+ --TestFileNameType1DL=traffic_profile/dl_traffic.csv
+ --TestFileNameType1UL=traffic_profile/ul_traffic.csv
+ --TestFileNumerology=1
+ --TestFileOffsetCell0=0
+ --TestFileOffsetCell1=1000
+ --TestFileOffsetCell2=2000
+ --TestFileOffsetCell3=3000
+ --TestFileOffsetCell4=4000
+ --TestFileOffsetCell5=5000
+ --TestFileOffsetCell6=6000
+ --TestFileOffsetCell7=7000
+ --TestFileOffsetCell8=8000
+ --TestFileOffsetCell9=9000
+ --TestFileOffsetCell10=10000
+ --TestFileOffsetCell11=11000
+ --TestMacTraceLevelModumask=0xE1FF
+ --TestMacTraceSubModumask0=0x1
+ --TestMacTraceSubModumask1=0x1
+ --TestMacTraceSubModumask2=0x1
+ --TestMacTraceSubModumask3=0x1
+ --TestMacTraceSubModumask4=0x1
+ --TestMacTraceSubModumask5=0x1
+ --TestMacTraceSubModumask6=0x1
+ --TestMacTraceSubModumask7=0x1
+ --TestMacTraceSubModumask8=0x1
+ --TestMacTracelogThread=0, 0, 0
+
+sDpdkFilePrefix: gnb0
+sWlsDevName: wls0
+[info] file[test/testmac/testmac_utils.c] func[testmac_utils_list_cores] line[109]: ActiveCoreList: 0-63
+
+testmac_utils_list_cores: Total 64 cores are online
+    Core List: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63
+MLogOpen: filename(testmac-mlog.bin) mlogSubframes (128), mlogCores(3), mlogSize(2048) mlog_mask (-1)
+    mlogSubframes (128), mlogCores(3), mlogSize(2048)
+    localMLogTimerInit
+        System clock (rdtsc)  resolution 1400000106 [Hz]
+        Ticks per us 1400
+    MLog Storage: 0x352fa000 -> 0x353ba820 [ 788512 bytes ]
+    localMLogFreqReg: 1400. Storing: 1400
+    Mlog Open successful
+
+Calling rte_eal_init: testmac -c 0x00000000000000000000000000000001 --proc-type=auto --file-prefix gnb0 --iova-mode=pa -a0000:00:00.0
+EAL: Detected CPU lcores: 64
+EAL: Detected NUMA nodes: 1
+EAL: Auto-detected process type: SECONDARY
+EAL: Detected static linkage of DPDK
+EAL: Multi-process socket /var/run/dpdk/gnb0/mp_socket_54876_18227a0a350d
+EAL: Selected IOVA mode 'PA'
+EAL: VFIO support initialized
+wls_mac_init:
+    wls_device_name[wls0] nBlockSize[262144] nAggregationLevel[0]
+
+TESTING --> inside WLS_Open
+wls_lib: Open wls0 (DPDK memzone)
+wls_lib: WLS_Open 0x4c0000000
+wls_lib: link: 1 <-> 0
+wls_lib: Mode 1
+wls_lib: WLS shared management memzone: wls0
+hugePageSize on the system is 1073741824 0x40000000
+wls_lib: WLS_Alloc Size Requested [4693426176] bytes HugePageSize [0x40000000] nHugePagesMapped[5]
+wls_lib: Connecting to remote peer ...
+wls_lib: Connected to remote peer
+testmac_mac2phy_stats_thread: [PID:  54879] binding on [CPU  0] [PRIO:  0] [POLICY:  1]
+wls_mac_create_mem_array: pMemArray[0x4175f60] pMemArrayMemory[0x4c0200000] totalSize[4290510848] nBlockSize[262144] numBlocks[16367]
+WLS inited ok WLS_EnqueueBlock [1200]
+Initial TraceLevelModuMask:0xe1ff
+Initial SubModuMask[0]:0x1
+Initial SubModuMask[1]:0x1
+Initial SubModuMask[2]:0x1
+Initial SubModuMask[3]:0x1
+Initial SubModuMask[4]:0x1
+Initial SubModuMask[5]:0x1
+Initial SubModuMask[6]:0x1
+Initial SubModuMask[7]:0x1
+Initial SubModuMask[8]:0x1
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "UplinkSlotDelay" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell12" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell13" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell14" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell15" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell16" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell17" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell18" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell19" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell20" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell21" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell22" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell23" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell24" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell25" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell26" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell27" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell28" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell29" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell30" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell31" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell32" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell33" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell34" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell35" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell36" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell37" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell38" set to default value 0
+[WARNING] func[cline_set_int] line[160]: not found in XML: param "TestFileOffsetCell39" set to default value 0
+timer_set_tsc_freq_from_clock: System clock (rdtsc) resolution 1400000046 [Hz]
+                               Ticks per usec 1400
+
+===========================================================================================================
+TESTMAC VERSION
+===========================================================================================================
+
+$Version: #DIRTY# $ (x86)
+IMG-date: Jul 25 2024
+IMG-time: 19:03:50
+===========================================================================================================
+
+
+===========================================================================================================
+Testmac threads in application
+===========================================================================================================
+testmac_run_thread:       [PID:  54881] binding on [CPU  0] [PRIO: 89] [POLICY:  1]
+wls_mac_rx_task:          [PID:  54880] binding on [CPU  1] [PRIO: 90] [POLICY:  1]
+===========================================================================================================
+
+testmac_set_phy_start: mode[1], period[40], count[0]
+
+testmac_run_load_files:
+Loading DL Config Files:
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/dl/testmac_dl_mu0_5mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/dl/testmac_dl_mu1_100mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/dl/testmac_dl_mu3_100mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+Loading UL Config Files:
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/ul/testmac_ul_mu0_5mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/ul/testmac_ul_mu0_20mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/ul/testmac_ul_mu1_100mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/ul/testmac_ul_mu3_100mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+Loading FD Config Files:
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/fd/testmac_fd_mu0_20mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/fd/testmac_fd_mu1_100mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    testmac_run_parse_file Parsing config file: /home/ubuntu/intel_sw/FlexRAN/testcase/fd/testmac_fd_mu3_100mhz.cfg
+         Forcing RAT to 8 (5GNR)
+    Adding SetCoreMask[numTests: 0][setCoreCnt: 0]. CoreMask[240 / 0x00000000000000f0]
+
+TESTMAC DL TESTS:
+    5GNR Numerology[0] Bandwidth[5]
+         1001  1002
+    5GNR Numerology[1] Bandwidth[100]
+         1201  1204  1250  1252
+    5GNR Numerology[3] Bandwidth[100]
+         1001  1009
+
+TESTMAC UL TESTS:
+    5GNR Numerology[0] Bandwidth[5]
+         1001  1002
+    5GNR Numerology[0] Bandwidth[20]
+         1002  1003
+    5GNR Numerology[1] Bandwidth[100]
+         1010  1018  1086  1542
+    5GNR Numerology[3] Bandwidth[100]
+         1040
+
+TESTMAC FD TESTS:
+    5GNR Numerology[0] Bandwidth[20]
+         1018
+    5GNR Numerology[1] Bandwidth[100]
+         1004  1300  1301  1302  1303  1304  1305  1306  1307  1308
+         1350  1600  1602
+    5GNR Numerology[3] Bandwidth[100]
+         1004
+TESTMAC>welcome to application console
+
+phystart 4 0 0
+phystart 4 0 0
+testmac_set_phy_start: mode[4], period[0], count[0]
+runnr 2 1 100 1600
+TESTMAC>runnr 2 1 100 1600
+Adding Test[1600]. NumCarr[1], Current Directory [4G: //] [5G: /home/ubuntu/intel_sw/FlexRAN/testcase//]
+Carrier[0]: ConfigFile: fd/mu1_100mhz/600/fd_testconfig_tst600.cfg
+
+
+
+
+----------------------------------------------------------------------------------------
+Running Test[1600]. NumCarr[1], Current Directory 4G: //, Current Directory 5G: /home/ubuntu/intel_sw/FlexRAN/testcase//
+Carrier[0]: RAT[5GNR] ConfigFile: fd/mu1_100mhz/600/fd_testconfig_tst600.cfg
+TESTMAC>MLogRestart
+MLogOpen: filename(testmac-mlog.bin) mlogSubframes (128), mlogCores(3), mlogSize(2048) mlog_mask (-1)
+    mlogSubframes (128), mlogCores(3), mlogSize(2048)
+    localMLogTimerInit
+        System clock (rdtsc)  resolution 1399999883 [Hz]
+        Ticks per us 1399
+    MLog Storage: 0x7fc730000e00 -> 0x7fc7300c1620 [ 788512 bytes ]
+    localMLogFreqReg: 1399. Storing: 1399
+    Mlog Open successful
+
+testmac_set_num_cells: Setting Max Cells: 1
+testmac_config_parse: test_num[1600] test_type[2] numcarrier[1] nLteCells[0] nNr5gCells[1]
+testmac_nr5g_compute_test_stats:
+    nCarrIndx[0] nSlots[40] nMu[1]
+    nAvgDLRbs[0] nAvgDLRbLayers[7] nAvgDLTput[51600]
+    nAvgULRbs[0] nAvgULRbLayers[0] nAvgULTput[0]
+testmac_nr5g_config_parse: nMaxNumerology[1]
+                      Cell[0] nSubcCommon[1] nCellTiming[0]
+Queueing 5GNR: MSG_TYPE_PHY_CONFIG_REQ(0)
+Counters: nDlIqMsgCnt[0] nUlIqMsgCnt[1] nPhyConfigCnt[0] nPhyStopCnt[0] nPhyShutDownCnt[0]
+----------------------------------------------------------------------------
+mem_mgr_display_size:
+        HEAP Buffers Alloc:       916 /         Size:  2,752,685,670
+        DPDK Buffers Alloc:         0 /         Size:              0
+        XRAN Buffers Alloc:         0 /         Size:              0
+       TOTAL Buffers Alloc:       916 /         Size:  2,752,685,670
+----------------------------------------------------------------------------
+
+
+Received 5GNR: MSG_TYPE_PHY_CONFIG_RESP(0)
+Queueing 5GNR: MSG_TYPE_PHY_START_REQ(0)
+Counters: nDlIqMsgCnt[0] nUlIqMsgCnt[0] nPhyConfigCnt[1] nPhyStopCnt[0] nPhyShutDownCnt[0]
+Received 5GNR: MSG_TYPE_PHY_START_RESP(0)
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min  5Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  9.54.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  2.22%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 10Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  9.50.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.72%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 15Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  9.50.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.72%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 20Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.86.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.25%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 25Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.71.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.16%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 30Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.73.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.17%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 35Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.67.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.13%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 40Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.70.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.15%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 45Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.65.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.11%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 50Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.72.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.17%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  0Min 55Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.75.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.19%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min  0Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.73.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.17%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min  5Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.78.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.21%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 10Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.56.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.05%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 15Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.80.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.23%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 20Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.68.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.14%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 25Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.74.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.18%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 30Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.68.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.13%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 35Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.75.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.18%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 40Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.75.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.19%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 45Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.71.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.16%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 50Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.73.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.17%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  1Min 55Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.66.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.12%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min  0Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.65.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.12%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min  5Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.50.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.00%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 10Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.61.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.08%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 15Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.70.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.15%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 20Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.68.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.14%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 25Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.80.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.23%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 30Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.83.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.26%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 35Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.66.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.15%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 40Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.69.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.17%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 45Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.70.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.18%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 50Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.66.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.15%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  2Min 55Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.66.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.15%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min  0Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.49.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.03%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min  5Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.55.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.08%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 10Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.70.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.18%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 15Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.78.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.23%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 20Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.73.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.19%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 25Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.78.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.23%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 30Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.76.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.21%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 35Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.77.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.23%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 40Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.88.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.30%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 45Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.72.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.19%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 50Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.60.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.11%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  3Min 55Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.65.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.14%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min  0Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.72.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.20%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min  5Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.72.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.20%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min 10Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.72.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.19%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min 15Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.69.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.17%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min 20Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.62.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.12%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min 25Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.54.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.07%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min 30Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.56.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.06%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min 35Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.65.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.12%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-----~~~~~-
+==== testmac Time: [Time:    0Hr  4Min 40Sec ] NumCellsConfig LTE[0] NR5G[1] NumCellsActive LTE[0] NR5G[1] Total Proc Time: [  5.00..  8.65.. 15.00] usces====
+    Core Utilization [Core: 1] [Util %:  6.12%]
+    Cell ID:     0
+   Cell2Map:     0
+   Map2Cell:     0
+        RAT:  NR5G
+      State:  ACTV
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Received 5GNR: MSG_TYPE_PHY_OAM_NOTIFICATION(0) @ (0 0 0)
+
+Received error notification !! Error Code 1 , Error Info L1 DL meet timeout issue, try a basic vf enqueue/dequeue to confirm whether the acc is still operating before further debugging!! , Model Id 0 , Error Type 1 , Sequence Id 0Received 5GNR: MSG_TYPE_PHY_SHUTDOWN_RESP(0)
+    Comparing DL IQ samples [Carr 0] /home/ubuntu/intel_sw/FlexRAN/testcase//fd/mu1_100mhz/600/dliq_c0.txt with /home/ubuntu/intel_sw/FlexRAN/testcase//fd/mu1_100mhz/600/dl_iq_out_tst600.d
+[ERROR] func[nr5g_host_config_test_compare_iq_samples] line[99]: Failed opening /home/ubuntu/intel_sw/FlexRAN/testcase//fd/mu1_100mhz/600/dliq_c0.txt file. Exiting...
+MLogPrint: ext_filename((null).bin)
+    Opening MLog File: testmac-mlog-c0.bin
+    MLog file testmac-mlog-c0.bin closed
+    Mlog Print with Time successful
+
+----------------------------------------------------------------------------
+mem_mgr_display_size:
+        HEAP Buffers Alloc:       792 /         Size:  2,732,375,782
+        DPDK Buffers Alloc:         0 /         Size:              0
+        XRAN Buffers Alloc:         0 /         Size:              0
+       TOTAL Buffers Alloc:       792 /         Size:  2,732,375,782
+----------------------------------------------------------------------------
+
+
+Test[FD_mu1_100mhz_1600] Completed
+wls_mac_print_stats:
+        nTotalBlocks[16367] nAllocBlocks[2399] nFreeBlocks[13968] nWaterMarkAllocBlocks[2420]
+        nTotalAllocCnt[2308780] nTotalFreeCnt[2306381] Diff[2399]
+        nDlBufAllocCnt[1736914] nDlBufFreeCnt[1736914] Diff[0]
+        nUlBufAllocCnt[571866] nUlBufFreeCnt[569467] Diff[2399]
+
+All Tests Completed, Total run 1 Tests, PASS 1 Tests, and FAIL 0 Tests
+----------------------------------------------------------------------------
+mem_mgr_display_size:
+        HEAP Buffers Alloc:       791 /         Size:  2,732,370,582
+        DPDK Buffers Alloc:         0 /         Size:              0
+        XRAN Buffers Alloc:         0 /         Size:              0
+       TOTAL Buffers Alloc:       791 /         Size:  2,732,370,582
+----------------------------------------------------------------------------
+
