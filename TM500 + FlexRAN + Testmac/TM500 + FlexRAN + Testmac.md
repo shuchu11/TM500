@@ -311,23 +311,6 @@ sudo ptp4l -i ens1f1 -m -H -2 -s -f /etc/ptp4l.conf
 // Ternimal 2 - Run phc2sys
 sudo phc2sys -w -m -s ens1f1 -R 8 -f /etc/ptp4l.conf
 ```
-ptp4l rms < 100 and phc2sys phc offset < 100 represent sync
-- ptp4l
-
-<br>
-
-![image](https://github.com/user-attachments/assets/ed1e6c24-1fa6-4449-a23d-2e0fe9e7348d)
-
-<br>
-
-- phc2sys
-
-<br>
-
-![image](https://github.com/user-attachments/assets/1ddcdde6-7b45-4108-9cb0-53c4556ad80a)
-
-<br>
-
 
 ### Step 3.3 Run gNB
 > [!TIP]
