@@ -355,7 +355,8 @@ total elapsed time [9312.373000(ms)]
 
 PHY>welcome to application console
 ```
-![alt text](image-12.png)
+<img width="1466" height="327" alt="image" src="https://github.com/user-attachments/assets/5cbf87b4-c40e-4187-86ba-f4ba21e77a38" />
+
 
 > [!CAUTION]
 > Please make sure the above screen appears in the terminal before proceeding to the next step, to avoid potential issues with the server.
