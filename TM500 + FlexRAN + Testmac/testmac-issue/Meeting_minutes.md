@@ -2,9 +2,9 @@
 **Date : 2025.07.20** \
 **Time : 14:00 - 15.40**\
 **Participants : Kyle , Leo**\
-**Meeting Topic : testmac issue**
+**Topic : testmac issue**\
 **Platform : Microsoft Teams** \
-**Meeting Summary : We still don't know why the original method failed to start testmac. Currently, Kyle has modified another known method to start testmac.** 
+**Summary : We still don't know why the original method failed to start testmac. Currently, Kyle has modified another known method to start testmac.** 
 # Issue
 problem : testmac issue（ At first ,we found Layer 1 automatically crash within 5 mins）and we rebooted our server three times, the issue remains unresolved.\
 These are the steps I followed to operate the server. : [Step.md](https://github.com/shuchu11/TM500-FlexRAN-Testmac-NOTE/blob/c4a5675c8da8fa920b7cd0ccf09b2e20e15f219d/TM500%20%2B%20FlexRAN%20%2B%20Testmac/testmac-issiue/Error_info%20/Step.md)
