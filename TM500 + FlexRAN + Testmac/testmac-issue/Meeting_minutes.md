@@ -18,7 +18,7 @@ These are the steps I followed to operate the server : [Step.md](https://github.
 [ini.sh](https://github.com/shuchu11/TM500-FlexRAN-Testmac-NOTE/blob/c4a5675c8da8fa920b7cd0ccf09b2e20e15f219d/TM500%20%2B%20FlexRAN%20%2B%20Testmac/testmac-issiue/Error_info%20/ini.sh)
 
 
-# Result 
+# Conclusion 
 Now, testmac can run for over 90 mins without crashing.
 
 <img width="1421" height="155" alt="image" src="https://github.com/user-attachments/assets/8fbe9e57-cdd2-40c1-b14c-0d3b69395371" />
