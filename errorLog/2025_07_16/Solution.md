@@ -1,1 +1,0 @@
-In this case, we use another testmac : https://github.com/bmw-ece-ntust/sheryl-e2e-integrations/blob/master/TM500%20%2B%20FlexRAN%20%2B%20xFAPI%20%2B%20O-DU%20HIGH%20%2B%20OAI%20CU/1.%20TM500%2BFlexRAN%2Btestmac/NTUST%20FlexRAN%20and%20Testmac%20configs/sprsp_mcc_mu1_100mhz_4x4_hton.cfg
