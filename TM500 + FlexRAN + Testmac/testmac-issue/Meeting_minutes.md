@@ -17,7 +17,7 @@ These are the steps I followed to operate the server. : [Step.md](https://github
 # method
 We use the another method(this was got from Intel before) to bring up testmac.\
 Blew is the original method :\
-In this integration, we use testcase 600
+In this integration, we use [testcase 600](https://github.com/bmw-ece-ntust/sheryl-e2e-integrations/tree/master/TM500%20%2B%20FlexRAN%20%2B%20xFAPI%20%2B%20O-DU%20HIGH%20%2B%20OAI%20CU/1.%20TM500%2BFlexRAN%2Btestmac/NTUST%20FlexRAN%20and%20Testmac%20configs/600)
 ```
 sudo su
 cd /home/ubuntu/intel_sw/FlexRAN/l1/bin/nr5g/gnb/testmac
