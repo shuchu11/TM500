@@ -40,6 +40,7 @@ source ../../../../../../phy/setupenv.sh
 [sprsp_mcc_mu1_100mhz_4x4_hton.cfg](https://github.com/shuchu11/TM500-FlexRAN-Testmac-NOTE/blob/14f3f835091579b8094aa6c38e2857ce19e19ee3/TM500%20%2B%20FlexRAN%20%2B%20Testmac/testmac-issiue/cfg_FILE/V2.0_sprsp_mcc_mu1_100mhz_4x4_hton.cfg)
 
 Although Sheryl's notes (see image below) show that we had known about this method for quite some time, we only made slight modifications to the `sprsp_mcc_mu1_100mhz_4x4_hton.cfg` file. Now, testmac has been running for over 5 hours without crashing.
+<img width="1068" height="201" alt="image" src="https://github.com/user-attachments/assets/7af214d2-193d-48ec-8142-cd7f19935c23" />
 
 Changes made to the `sprsp_mcc_mu1_100mhz_4x4_hton.cfg` file [ori_sprsp_mcc_mu1_100mhz_4x4_hton.cfg](https://github.com/shuchu11/TM500-FlexRAN-Testmac-NOTE/blob/14f3f835091579b8094aa6c38e2857ce19e19ee3/TM500%20%2B%20FlexRAN%20%2B%20Testmac/testmac-issiue/cfg_FILE/sprsp_mcc_mu1_100mhz_4x4_hton.cfg):
 
