@@ -24,8 +24,8 @@ Now, testmac can run for over 90 mins without crashing.
 <img width="1583" height="174" alt="螢幕擷取畫面 2025-07-18 165011" src="https://github.com/user-attachments/assets/0689f5c2-7b4a-4327-bb92-9ffbf1279643" />
 <img width="1421" height="155" alt="image" src="https://github.com/user-attachments/assets/8fbe9e57-cdd2-40c1-b14c-0d3b69395371" />
 
-# method
-We use the another method(this was got from Intel before) to bring up testmac.\
+# Method
+We use the another method(this was got from Intel before) to bring up testmac.
 
 * **Original method** 
 In this integration, we use [testcase 600](https://github.com/bmw-ece-ntust/sheryl-e2e-integrations/tree/master/TM500%20%2B%20FlexRAN%20%2B%20xFAPI%20%2B%20O-DU%20HIGH%20%2B%20OAI%20CU/1.%20TM500%2BFlexRAN%2Btestmac/NTUST%20FlexRAN%20and%20Testmac%20configs/600)
