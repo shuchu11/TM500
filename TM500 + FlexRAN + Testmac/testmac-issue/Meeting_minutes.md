@@ -30,7 +30,7 @@ phystart 4 0 0
 runnr 2 1 100 1600
 ```
 
-Blew is the new method :\
+Blew is the new method :
 ```
 sudo su
 cd /home/ubuntu/intel_sw/FlexRAN/l1/bin/nr5g/gnb/testmac
