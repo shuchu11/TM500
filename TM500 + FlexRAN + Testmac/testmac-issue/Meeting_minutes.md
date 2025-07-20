@@ -1,5 +1,5 @@
 # Information
-**Date : 2025.07.20** \
+**Date : 2025.07.18** \
 **Time : 14:00 - 15.40**\
 **Participants : Kyle , Leo**\
 **Topic : testmac issue**\
