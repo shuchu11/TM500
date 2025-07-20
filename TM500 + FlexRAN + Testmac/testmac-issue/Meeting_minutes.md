@@ -22,6 +22,7 @@ These are the steps I followed to operate the server : [Step.md](https://github.
 Now, testmac can run for over 90 mins without crashing.
 
 <img width="1583" height="174" alt="螢幕擷取畫面 2025-07-18 165011" src="https://github.com/user-attachments/assets/0689f5c2-7b4a-4327-bb92-9ffbf1279643" />
+<img width="1421" height="155" alt="image" src="https://github.com/user-attachments/assets/8fbe9e57-cdd2-40c1-b14c-0d3b69395371" />
 
 # method
 We use the another method(this was got from Intel before) to bring up testmac.\
