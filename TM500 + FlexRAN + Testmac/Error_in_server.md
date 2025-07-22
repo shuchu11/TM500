@@ -58,7 +58,7 @@ I try sharing my phone's internet using a USB connection (I need to go to the IA
 
 ---
 
-## 2.5 🛠 嘗試處理步驟
+## 2.5 🛠 嘗試處理步驟 (需要先解決server無法連接網路的問題)
 
 ### 修復 GNOME 套件
 ```bash
