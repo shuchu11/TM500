@@ -10,13 +10,13 @@
 ## 📸 錯誤與警告截圖
 
 1. `journalctl -b -p err`  
-   ![錯誤訊息1](<img width="1774" height="1009" alt="螢幕擷取畫面 2025-07-22 131538" src="https://github.com/user-attachments/assets/37ee7334-e6b1-45d2-a8b3-4627195e9a8f" />)
+   <img width="1774" height="1009" alt="螢幕擷取畫面 2025-07-22 131538" src="https://github.com/user-attachments/assets/37ee7334-e6b1-45d2-a8b3-4627195e9a8f" />
 
 2. `journalctl -b -p warning`  
-   ![錯誤訊息2](<img width="1796" height="1049" alt="螢幕擷取畫面 2025-07-22 131612" src="https://github.com/user-attachments/assets/38b01069-0705-4a5a-93f7-57b188793f6b" />)
+   <img width="1796" height="1049" alt="螢幕擷取畫面 2025-07-22 131612" src="https://github.com/user-attachments/assets/38b01069-0705-4a5a-93f7-57b188793f6b" />
 
 3. `systemctl status dbus.service`  
-   ![錯誤訊息3](<img width="1776" height="980" alt="image" src="https://github.com/user-attachments/assets/b12f81dd-e344-47ea-97cf-f01ae434595b" />)
+   <img width="1776" height="980" alt="image" src="https://github.com/user-attachments/assets/b12f81dd-e344-47ea-97cf-f01ae434595b" />
 
 ---
 
