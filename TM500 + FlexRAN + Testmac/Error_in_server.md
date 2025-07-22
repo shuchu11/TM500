@@ -3,7 +3,7 @@
 > 日期：2025-07-22  
 > Server IP：192.168.8.76  
 > 使用者：ubuntu@maxwell  
-> 目的：診斷無法進入 GUI，且看不到「Settings」圖示的錯誤情形
+> 目的：看不到「Settings」圖示的錯誤情形
 
 ---
 
