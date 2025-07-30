@@ -64,8 +64,8 @@ tail -n 5 /var/log/syslog
 <pr>
 
 **BIOS & BMC**  \
-No need to restart the server , If the BMC connection is set, log in to the GUI \
-- (4) using the Web interface and you will get the following screen: \
+No need to restart the server , If the BMC connection is set, log in to the GUI 
+- (4) using the Web interface and you will get the following screen: 
 <pr>
 
 <img width="752" height="370" alt="image" src="https://github.com/user-attachments/assets/20326382-9963-41b7-9db9-c1ba8f051c5c" />
@@ -146,7 +146,7 @@ No need to restart the server , If the BMC connection is set, log in to the GUI 
 - 測試完畢後,如下圖
 <img width="1601" height="617" alt="image" src="https://github.com/user-attachments/assets/ae2032b0-97dc-4855-a573-c3bd726dadfb" />
 
-- - 此工具會在USB磁碟中建立一個資料夾，其中包含電路板名稱、序號和時間
+- 此工具會在USB磁碟中建立一個資料夾，其中包含電路板名稱、序號和時間
 標籤，用於儲存結果。您可以在該資料夾中找到超文本 (.html) 格式的摘要
 日誌。 **請提結果`.pdf`檔案**
 
