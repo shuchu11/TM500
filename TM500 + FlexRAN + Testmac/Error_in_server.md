@@ -29,6 +29,14 @@ I try sharing my phone's internet using a USB connection (I need to go to the IA
 ---
 
 ## 3 廠商回報與處理 ( SuperMicro )
+**我方須提供的資料**
+|       項目        |  是否完成     |
+|:-----------------:|:------------:|
+|    網卡型號        |     ✅      |
+|     dmesg.txt     |     ✅      |
+| server 資訊 (.docx)|     ✅      |
+| 硬體診斷結果 (.pdf) |     ✅      |
+
 
 ### 3.1 我方須提供的資料 part 1
 
