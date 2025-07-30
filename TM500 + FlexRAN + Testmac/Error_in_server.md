@@ -40,7 +40,7 @@ I try sharing my phone's internet using a USB connection (I need to go to the IA
 > 請將以下指定畫面截圖並整理成一份 word 檔(`.docx`) ，將`word檔`和`dmesg.txt`兩份文件回報給廠商
 
 
-**The OS requires you to provide information :** \
+**The OS requires you to provide information :** 
 - (1) Kernel version , use command : uname -a  \
 Can get information like this .
 
