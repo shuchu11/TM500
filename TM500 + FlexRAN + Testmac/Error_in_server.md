@@ -119,7 +119,7 @@ No need to restart the server , If the BMC connection is set, log in to the GUI
 #### 3.3.2 開始 DOS 檢測 (on Server)
 
 - 將 server 完全關機 (非重新啟動)
-- 插上有含SDO的USB後,按下開機鍵後啟動server ，並連續點擊`DELETE`進入BIOS ，,看到如下畫面按F11
+- 插上有含SDO的USB後,按下開機鍵後啟動server ，並連續點擊`DELETE`進入BIOS ，看到如下畫面按F11
 
 <pr>
    
@@ -164,3 +164,24 @@ No need to restart the server , If the BMC connection is set, log in to the GUI
 
 **下圖為文件內容**
 <img width="1680" height="915" alt="image" src="https://github.com/user-attachments/assets/9fc9e431-c5fd-448d-b777-5b267ccacc80" />
+
+
+## 如何 Re-install os
+> [!TIP]
+> 無須準備新硬碟，僅需準備 Ubuntu USB 並依照下列步驟 reinstall Ubuntu os
+
+- 將 server 完全關機 (非重新啟動)
+- 插上有含SDO的USB後,按下開機鍵後啟動server ，並連續點擊 `DELETE` 進入BIOS ，點擊 `DELETE` 進入Setup
+
+-  --> "Boot" / 確保 ubuntu USB 執行順位在第一(如下圖)
+
+<pr>
+
+<img width="1023" height="816" alt="螢幕擷取畫面 2025-07-30 122810" src="https://github.com/user-attachments/assets/445dadd6-3a78-4412-917e-7d6f2762e8eb" />
+
+<pr>
+
+-  離開並儲存 `F4`
+
+> [!NOTE]
+> 若 ubuntu USB 執行順位不在第一 ，請執行以下操作 : 利用 上下鍵 + `Enter` 進入第一個選項 > 於深藍色選單中選擇 ubuntu USB > " Yes " > 離開並儲存 `F4`
