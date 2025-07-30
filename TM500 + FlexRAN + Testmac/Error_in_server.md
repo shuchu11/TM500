@@ -171,7 +171,7 @@ No need to restart the server , If the BMC connection is set, log in to the GUI
 > 無須準備新硬碟，僅需準備 Ubuntu USB 並依照下列步驟 reinstall Ubuntu os
 
 - 將 server 完全關機 (非重新啟動)
-- 插上有含SDO的USB後,按下開機鍵後啟動server ，並連續點擊 `DELETE` 進入BIOS ，點擊 `DELETE` 進入Setup
+- 插上有含SDO的USB後,按下開機鍵後啟動server ，並連續點擊 `DELETE` 進入BIOS > 點擊 `DELETE` 進入Setup
 
 -  --> "Boot" / 確保 ubuntu USB 執行順位在第一(如下圖)
 
