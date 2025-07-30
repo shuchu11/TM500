@@ -188,3 +188,12 @@ No need to restart the server , If the BMC connection is set, log in to the GUI
 
 > [!NOTE]
 > 若Ubuntu USB啟動失敗，畫面自動跳回BIOS介面，請嘗試以下指令 --> `F11` Invoke Boot Menu > "USB"
+
+
+# 目前進度
+- 完成 reinstall
+-  確定網卡恢復 ，目前Server IP : 192.168.8.76 無誤
+-  Setting 功能正常
+![1234](https://github.com/user-attachments/assets/6db37f74-7a2c-46a7-b1b8-162bb2d05203)
+![123](https://github.com/user-attachments/assets/409f7fcb-d71c-4b4a-b0cd-ed033f8913b8)
+
