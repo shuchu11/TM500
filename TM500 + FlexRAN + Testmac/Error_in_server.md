@@ -187,4 +187,4 @@ No need to restart the server , If the BMC connection is set, log in to the GUI
 - 系統將自動進入Ubuntu 安裝介面 ，若系統自動跳回BIOS代表從USB請動系統失敗
 
 > [!NOTE]
-> 若Ubuntu USB啟動失敗，畫面自動跳回BIOS介面，請嘗試以下指令 --> `F11` > "USB"
+> 若Ubuntu USB啟動失敗，畫面自動跳回BIOS介面，請嘗試以下指令 --> `F11` Invoke Boot Menu > "USB"
