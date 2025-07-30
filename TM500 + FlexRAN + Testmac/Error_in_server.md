@@ -180,8 +180,11 @@ No need to restart the server , If the BMC connection is set, log in to the GUI
 <img width="1023" height="816" alt="螢幕擷取畫面 2025-07-30 122810" src="https://github.com/user-attachments/assets/445dadd6-3a78-4412-917e-7d6f2762e8eb" />
 
 <pr>
-
--  離開並儲存 `F4`
-
 > [!NOTE]
 > 若 ubuntu USB 執行順位不在第一 ，請執行以下操作 : 利用 上下鍵 + `Enter` 進入第一個選項 > 於深藍色選單中選擇 ubuntu USB > " Yes " > 離開並儲存 `F4`
+
+-  離開並儲存 `F4`
+- 系統將自動進入Ubuntu 安裝介面 ，若系統自動跳回BIOS代表從USB請動系統失敗
+
+> [!NOTE]
+> 若Ubuntu USB啟動失敗，畫面自動跳回BIOS介面，請嘗試以下指令 --> `F11` > "USB"
