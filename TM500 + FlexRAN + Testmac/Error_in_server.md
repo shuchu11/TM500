@@ -9,10 +9,10 @@
 
 ---
 - Issue
-   - [Issue 1: No network card displayed after `ifconfig`](#1-issue-1-no-network-card-displayed-after-ifconfig)
+   - [1 .Issue 1: No network card displayed after `ifconfig`](#1-issue-1-no-network-card-displayed-after-ifconfig)
       - [Troubleshooting Steps](#12--troubleshooting-steps)
-   - [Issue 2 Errors & Warnings (in kernel)](#2-issue-2--errors--warnings-in-kernel)
-   - [3 Vendor Report & Processing (SuperMicro)](#3-vendor-report--processing-supermicro)
+   - [2 .Issue 2 Errors & Warnings (in kernel)](#2-issue-2--errors--warnings-in-kernel)
+   - [3 .Vendor Report & Processing (SuperMicro)](#3-vendor-report--processing-supermicro)
       - [3.1 Required Information Part 1](#31-required-information-part-1)
       - [3.2 Required Information Part 2](#32-required-information-part-2)
       - [3.3 Required Information Part 3 - Hardware Diagnostic (DOS) Result (.pdf)](#33-required-information-part-3---hardware-diagnostic-dos-result-pdf)
